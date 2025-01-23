@@ -23,7 +23,12 @@ export function DataPage () {
 	}
 	// 에러 발생 시 표시
 	if (isError) {
-		return <p> ERROR! : {error.message} </p>
+		return(
+			<div>
+				<h1 style={{border:"10px"}}> [DATAPAGE ERROR] : {error.name} <br/> {error.message}</h1>
+				<p>{error.stack} </p>
+			</div> 
+			)
 	}
 
 	const btnclick = () => {

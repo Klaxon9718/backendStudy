@@ -1,4 +1,4 @@
-import { ErrorBoundary, FallbackProps } from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
 import { Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
 

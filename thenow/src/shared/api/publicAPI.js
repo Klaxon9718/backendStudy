@@ -1,10 +1,9 @@
-import axios, { AxiosError, AxiosInstance, HttpStatusCode } from 'axios';
-import AxiosMockAdapter from 'axios-mock-adapter'
+import axios from 'axios';
 
 // 인스턴스를 생성할때 config 기본값 설정하기
 //https://axios-http.com/kr/docs/config_defaults
 const apiInstance = axios.create({
-	baseURL: `http://localhost:3000/api`,
+	baseURL: `http://localhost:5173/api`,
 });
 
 //NASA API 기본 요청 설정
@@ -20,7 +19,7 @@ export const nasaAPI = {
 		const data = await nasaInstacne.get('planetary/apod/',{
 			params :{
 				count: count,
-				api_key: process.env.REACT_APP_NASA_APIKEY
+				api_key: import.meta.env.VITE_NASA_APIKEY	//vite를 사용하면서, env의 설정이 약간 변경된다.
 			}
 		})
 		.then(response => {

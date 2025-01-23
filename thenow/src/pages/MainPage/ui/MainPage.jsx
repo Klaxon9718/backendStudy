@@ -18,7 +18,12 @@ export function MainPage () {
 	}
 	// 에러 발생 시 표시
 	if (isError) {
-		return <p> ERROR! : {error.message} </p>
+		return(
+		<div>
+			<h1 style={{border:"10px"}}> [MAINPAGE ERROR] : {error.name} <br/> {error.message}</h1>
+			<p> {error.stack} </p>
+		</div> 
+		)
 	}
 	
 	return(
