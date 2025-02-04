@@ -1,14 +1,13 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { GlobalBoundary } from './GlobalBoundary.jsx';
+import { GlobalBoundary } from '@src/GlobalBoundary.jsx';
 
-import { HeaderComponent } from './widgets/HeaderComponent';
-import { FooterComponent } from './widgets/FooterComponent';
+import { HeaderComponent } from '@widgets/HeaderComponent';
+import { FooterComponent } from '@widgets/FooterComponent';
 
-import { MainPage } from './pages/MainPage/ui/MainPage';
-import { DataPage } from './pages/DataPage/ui/DataPage';
-import { ShowPage } from './pages/ShowPage/ui/ShowPage';
-
-import { NotfoundPage } from './NotfoundPage/index.js';
+import { MainPage } from '@pages/MainPage/ui/MainPage';
+import { DataPage } from '@pages/DataPage/ui/DataPage';
+import { ShowPage } from '@pages/ShowPage/ui/ShowPage';
+import { NotfoundPage } from '@pages/NotfoundPage/index.js';
 
 //부모인 HeaderCompoent, FooterComponent 사이에 자식들이 그려진다.
 const OutletContent = () => {

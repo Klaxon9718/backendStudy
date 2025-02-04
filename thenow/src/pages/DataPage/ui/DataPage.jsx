@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useQuery } from "@tanstack/react-query"
 
-import { dataAPI } from "../../../shared/api/publicAPI";
+import { dataAPI } from "@shared/api/publicAPI";
 
 export function DataPage () {
 

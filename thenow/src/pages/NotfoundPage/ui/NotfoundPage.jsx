@@ -20,6 +20,6 @@ import { Link } from "react-router-dom";
 
 export function NotfoundPage() {
 	return (
-		<Link to={"/"}>dddd</Link>
+		<Link to={"/"}>NotfoundPage</Link>
 	)
 }

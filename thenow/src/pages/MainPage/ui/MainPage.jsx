@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useQuery } from "@tanstack/react-query"
 
-import { nasaAPI } from "../../../shared/api/publicAPI";
+import { nasaAPI } from "@shared/api/publicAPI";
 
 
 export function MainPage () {
