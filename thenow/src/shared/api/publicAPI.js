@@ -3,12 +3,12 @@ import axios from 'axios';
 // 인스턴스를 생성할때 config 기본값 설정하기
 //https://axios-http.com/kr/docs/config_defaults
 const apiInstance = axios.create({
-	baseURL: `http://localhost:5173/api`,
+	baseURL: import.meta.env.VITE_API_BASEURL,
 });
 
 //NASA API 기본 요청 설정
 const nasaInstacne = axios.create({
-	baseURL: `http://api.nasa.gov/`,
+	baseURL: import.meta.env.VITE_NASA_BASEURL,
 });
 
 
